@@ -6,7 +6,8 @@
 
 struct ogrenci {
     char soyadi[20],adi[20],bolumu[30],cinsiyet,dogum_yeri[20];
-    int no[15],yasi,telefon[15];
+    int yasi;
+    long long no,telefon;
 };
 
 //Programin basladigi ana fonskiyon
@@ -48,7 +49,7 @@ int main() {
         scanf(" %s", o.soyadi);
 
         printf("Okul No: ");
-        scanf(" %d", &o.no);
+        scanf(" %lld", &o.no);
 
         printf("Bolumu: ");
         scanf( " %[^\n]", o.bolumu);
@@ -63,7 +64,7 @@ int main() {
         scanf(" %d", &o.yasi);
 
         printf("Telefon: ");
-        scanf(" %d", &o.telefon);
+        scanf(" %lld", &o.telefon);
         printf("-------------------------------\n");
         printf("Kayit yapmaya devam etmek istiyor musunuz? (E/H): ");
         scanf(" %c", &devam);
